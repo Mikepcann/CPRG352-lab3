@@ -57,30 +57,30 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                         answer = val1 + val2;
                         request.setAttribute("answer", String.format("%d", answer));
                         reloadPage(request, response);
-                        return;
+                        break;
                     case "-":
                         answer = val1 - val2;
                         request.setAttribute("answer", String.format("%d", answer));
                         reloadPage(request, response);
-                        return;
+                        break;
                     case "*":
                         answer = val1 * val2;
                         request.setAttribute("answer", String.format("%d", answer));
                         reloadPage(request, response);
-                        return;
+                        break;
                     case "%":
                         answer = val1 % val2;
                         request.setAttribute("answer", String.format("%d", answer));
                         reloadPage(request, response);
-                        return;
+                        break;
                     default:
                         request.setAttribute("answer", invalid);
                         reloadPage(request, response);
-                        return;
+                        break;
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println(e);
+                
                 request.setAttribute("first", first);
                 request.setAttribute("second", second);
                  request.setAttribute("answer", invalid);
@@ -88,9 +88,9 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
             }
         }
 
-        System.out.println("First = " + first + " Second = " + second + " operation = " + operation);
+//        System.out.println("First = " + first + " Second = " + second + " operation = " + operation);
         // reload the page
-        reloadPage(request, response);
+//        reloadPage(request, response);
 
     }
 
