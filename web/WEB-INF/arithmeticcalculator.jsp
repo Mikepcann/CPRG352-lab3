@@ -19,20 +19,33 @@
             </div>
             <div class="main">
                 <form action="arithmetic" method="POST" id="doMath">
-                    <label for="first">First:</label>
-                    <input type="text" name="first" value="${first}" min="0">
-                    <br>
-                    <label for="second">Second:</label> 
-                    <input type="text" name="second" value="${second}" min="0">
-                    <br>
-                    <input type="submit" class="mathButt" name="operation" value="+"></input>
-                    <input type="submit" class="mathButt" name="operation" value="-"></input>
-                    <input type="submit" class="mathButt" name="operation" value="*"></input>
-                    <input type="submit" class="mathButt" name="operation" value="%"></input>
-                    <p>Result: <span>${answer}</span>
+                    <div class="mb-3 row">
+                        <label for="first" class="col-sm-2 col-form-label">First:</label>
+                        <div class="col-sm-1">
+                            <input class="form-control" type="text" name="first" value="${first}" min="0">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="second" class="col-sm-2 col-form-label">Second:</label> 
+                        <div class="col-sm-1">
+                            <input class="form-control" type="text" name="second" value="${second}" min="0">
+                        </div> 
+                    </div>
+                    <div class="mb-1 col">
                         <br>
-                        <a href="/Calculators/age">Age calculator</a>
-                    </p>                      
+                        <input type="submit" class="btn btn-primary mb-3" name="operation" value="+"></input>
+                        <input type="submit" class="btn btn-primary mb-3" name="operation" value="-"></input>
+                        <input type="submit" class="btn btn-primary mb-3" name="operation" value="*"></input>
+                        <input type="submit" class="btn btn-primary mb-3" name="operation" value="%"></input>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <p class="card-title">Result: <span class="bold">${answer}</span>
+                                <br>
+                                <a href="/Calculators/age"  class="btn btn-primary">Age calculator</a>
+                            </p>
+                        </div> 
+                    </div>                    
                 </form>
             </div>
         </div>

@@ -20,14 +20,19 @@
 
             <div class="main">
                 <form action="age" method="POST">
-                    <label for="age">Enter your age:</label>
-                    <input type="text" name="age" value="">
+                    <div class="mb-3 row"> 
+                        <label for="age" class="col-sm-2 col-form-label">Enter your age:</label>
+                        <div class="col-sm-3">
+                            <input type="text" name="age" value="" class="form-control">
+                        </div>
+                    </div>
                     <br>
-                    <input type="submit" value="Age next birthday">
+                    <input type="submit"   class="btn btn-primary" value="Age next birthday">
                     <br>
                     <span>${message}</span>
                     <br>
-                    <a href="/Calculators/arithmetic">Arithmetic calculator</a>                       
+                    <br>
+                    <a href="/Calculators/arithmetic"  class="btn btn-primary">Arithmetic calculator</a>                       
                 </form>
             </div>
         </div>
