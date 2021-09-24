@@ -10,15 +10,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Age Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
     <body>
-        <div class="header">
-            <h1>Age Calculator</h1>
-        </div>
-        
-        <div class="main">
-            <form action="age" method="POST">
-                <label for="age">Enter your age:</label>
+        <div class="container">
+            <div class="header">
+                <h1>Age Calculator</h1>
+            </div>
+
+            <div class="main">
+                <form action="age" method="POST">
+                    <label for="age">Enter your age:</label>
                     <input type="text" name="age" value="">
                     <br>
                     <input type="submit" value="Age next birthday">
@@ -26,7 +28,8 @@
                     <span>${message}</span>
                     <br>
                     <a href="/Calculators/arithmetic">Arithmetic calculator</a>                       
-            </form>
+                </form>
+            </div>
         </div>
     </body>
 </html>
